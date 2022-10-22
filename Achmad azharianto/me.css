@@ -1,0 +1,219 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 60px;
+    background-color: #000;
+    position: relative;
+    text-align: center;
+    display: flexbox;
+  }
+  
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(q.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    margin-left: 770px;
+    float: left;
+    width: 33.3%;
+    margin-bottom: 0px; 
+    padding: 0 8px;
+  }
+  
+.hero h2{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .container {
+    color: #000;
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: black;
+    text-align: center;
+  }
+  
+  
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  @media screen {
+    .column {
+      width: 20%;
+      display: flexbox;
+
+    }
+  }
+
+
+  body {
+    background-color: white;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linier;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+
+nav{
+  display: flex;
+  width: 100%;
+  background: black;
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 30px;
+}
+nav .icon{
+  font-size: 35px;
+  font-weight: 800;
+  font-style:italic;
+  color: aliceblue;
+  cursor: pointer;
+  
+}
+nav ol{
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+nav ol li{
+  margin: 0 2px;
+}
+nav ol li a{
+  color:aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+nav ol li:hover a{
+  background: #fff;
+  color: rgb(0, 1, 1);
+}
+nav .search_box{
+  display: flex;
+  margin: auto 0;
+  height: 27px;
+  line-height: 35px;
+}
+nav .search_box input{
+  border: none;
+  outline: none;
+  background:#fff;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 20px;
+  width: 350px;
+}
+nav .search_box i{
+  width: 35px;
+  font-size: 25px;
+  color: #fff;
+}
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  display: none;
+}
+nav .icon{
+  display: inline-block;
+  padding: 5px 50px;
+}
+nav .search_box{
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+nav .search_box input{
+  width: 80%;
+}
+.gambar img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 30px;
+}
